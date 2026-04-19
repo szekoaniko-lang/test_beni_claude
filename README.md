@@ -1,78 +1,48 @@
-# Alexinomia — Interactive Informational Website
+# Alexinomia — The Unspoken Name
 
-An immersive, evidence-based educational website about **alexinomia** — the psychological phenomenon of fear and avoidance of using personal names. Built with plain HTML, CSS, and JavaScript. No dependencies or build step required.
+An immersive, single-page educational site about **alexinomia**: the anxiety-driven inability to use personal names. Built around the three peer-reviewed papers that currently define the field (2023 · 2024 · 2025).
 
----
+## Files
 
-## Publishing to GitHub Pages
+| File | Purpose |
+|---|---|
+| `index.html` | All content and structure — hero, experience, research timeline, impact, self-check, support, references |
+| `style.css` | Editorial warm theme (cream / burgundy / forest / gold); responsive, reduced-motion safe |
+| `script.js` | Cursor glow, typewriter hero, scroll reveal, expandable cards, animated counters, 7-question reflection quiz |
+| `memory.md` | Notes from the prior build session (kept for provenance) |
 
-### Step 1 — Create a GitHub repository
+No build step. No dependencies. Open `index.html` in any modern browser.
 
-1. Go to [github.com](https://github.com) and sign in.
-2. Click **New repository** (top right, the `+` icon).
-3. Name it something like `alexinomia` (or any name you prefer).
-4. Set it to **Public**.
-5. Do **not** initialise with a README (you already have files).
-6. Click **Create repository**.
+## Sources cited (all peer-reviewed, verified April 2026)
 
-### Step 2 — Upload the files
+1. **Ditye, T., Rodax, N., & Welleschik, L. (2023).** Alexinomia: The fear of using personal names. *Frontiers in Psychology, 14,* 1129272. [doi:10.3389/fpsyg.2023.1129272](https://doi.org/10.3389/fpsyg.2023.1129272) · [PubMed 37020910](https://pubmed.ncbi.nlm.nih.gov/37020910/) · [PMC10069083](https://pmc.ncbi.nlm.nih.gov/articles/PMC10069083/)
+2. **Bergert, A., Welleschik, L., & Ditye, T. (2024).** "Why can't I say people's names?" Alexinomia as a widespread psychological phenomenon. *Acta Psychologica, 246,* 104279. [doi:10.1016/j.actpsy.2024.104279](https://doi.org/10.1016/j.actpsy.2024.104279) · [PubMed 38643557](https://pubmed.ncbi.nlm.nih.gov/38643557/)
+3. **Ditye, T., Sartorio, M., & Welleschik, L. (2025).** Name avoidance in social anxiety: Understanding alexinomia. *Journal of Anxiety Disorders, 109,* 102958. [doi:10.1016/j.janxdis.2024.102958](https://doi.org/10.1016/j.janxdis.2024.102958) · [PubMed 39721365](https://pubmed.ncbi.nlm.nih.gov/39721365/)
 
-**Option A — via the GitHub website (simplest):**
+Secondary hub: the authors' research group at Sigmund Freud Private University Vienna maintains [alexinomia.org](https://alexinomia.org/) and a publications page at [psychologie.sfu.ac.at/en/research/alexinomia](https://psychologie.sfu.ac.at/en/research/alexinomia/).
 
-1. On the empty repository page, click **uploading an existing file**.
-2. Drag and drop all three files:
-   - `index.html`
-   - `style.css`
-   - `script.js`
-3. Scroll down and click **Commit changes**.
+## Publish to GitHub Pages
 
-**Option B — via Git (if you have Git installed):**
+From this folder:
 
 ```bash
-cd "path/to/your/folder"
 git init
-git add index.html style.css script.js
-git commit -m "Initial commit: alexinomia website"
+git add index.html style.css script.js README.md
+git commit -m "Initial alexinomia site"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git remote add origin https://github.com/<your-user>/<your-repo>.git
 git push -u origin main
 ```
 
-### Step 3 — Enable GitHub Pages
+Then on GitHub: **Settings → Pages → Build from branch → `main` / root → Save**. The site will be live at `https://<your-user>.github.io/<your-repo>/` within a minute or two.
 
-1. In your repository, go to **Settings** (top menu bar).
-2. In the left sidebar, click **Pages**.
-3. Under **Source**, select **Deploy from a branch**.
-4. Choose branch: `main`, folder: `/ (root)`.
-5. Click **Save**.
+## Design notes
 
-GitHub will display a URL like:
-```
-https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
-```
+- **Theme:** editorial warm (cream `#f6efe4`, burgundy `#6b2d3a`, forest `#2e4a3d`, gold `#c69c4c`). Chosen to feel like a printed long-form article rather than a clinical pamphlet.
+- **Typography:** Cormorant Garamond (serif display) for headings and pull quotes, Inter for running text — loaded from Google Fonts.
+- **Motion:** every animation respects `prefers-reduced-motion`; the cursor glow is disabled on touch devices.
+- **Accessibility:** full keyboard navigation for cards and quiz; visible focus ring; semantic landmarks; sufficient colour contrast on the cream background.
 
-It may take **1–2 minutes** to go live. Refresh the Pages settings tab to see the live URL appear.
+## Disclaimer
 
----
-
-## File Structure
-
-```
-.
-├── index.html    # All site content and structure
-├── style.css     # Immersive dark-theme styling + responsive layout
-├── script.js     # Scroll animations, quiz, counters, particles
-└── README.md     # This file
-```
-
----
-
-## Sources
-
-All content is grounded in published, peer-reviewed research:
-
-1. Ditye, T., Rodax, N., & Welleschik, L. (2023). Alexinomia: The fear of using personal names. *Frontiers in Psychology*, 14, 1129272. https://doi.org/10.3389/fpsyg.2023.1129272
-
-2. Bergert, A., Welleschik, L., & Ditye, T. (2024). "Why can't I say people's names?" Alexinomia as a widespread psychological phenomenon. *Acta Psychologica*, 246, 104279. PMID: 38643557
-
-3. Ditye, T., Sartorio, M., & Welleschik, L. (2025). Name avoidance in social anxiety: Understanding alexinomia. *Journal of Anxiety Disorders*. PMID: 39721365
+This is an independent educational site. It is not affiliated with the cited authors or publishers, and the self-check is a reflection tool only — it is not a diagnostic instrument.

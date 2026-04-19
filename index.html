@@ -1,455 +1,440 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alexinomia — The Fear of Using Names</title>
-  <meta name="description" content="An interactive, research-based guide to alexinomia — the psychological phenomenon of name avoidance." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alexinomia — The Unspoken Name</title>
+  <meta name="description" content="An immersive, evidence-based guide to alexinomia: the anxiety-driven inability to use personal names. Grounded in peer-reviewed research from Ditye, Bergert, Rodax, Welleschik, and colleagues (2023–2025)." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
-<nav id="navbar">
-  <div class="nav-inner">
-    <a href="#hero" class="nav-logo">alexinomia</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#what">What Is It?</a></li>
-      <li><a href="#symptoms">Symptoms</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#impact">Impact</a></li>
-      <li><a href="#self-check">Self-Check</a></li>
-      <li><a href="#help">Get Help</a></li>
-      <li><a href="#references">Sources</a></li>
-    </ul>
-  </div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<nav class="topnav" id="topnav">
+  <a href="#top" class="brand">Alexinomia<span class="brand-dot">.</span></a>
+  <ul class="nav-links">
+    <li><a href="#what">What it is</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#reflect">Reflect</a></li>
+    <li><a href="#help">Support</a></li>
+    <li><a href="#refs">Sources</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-<section id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-particles" id="particles"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow reveal">A Psychological Phenomenon</p>
-    <h1 class="hero-title reveal">
-      <em>Alexinomia</em>
+<header class="hero" id="top">
+  <div class="hero-orbs" aria-hidden="true">
+    <span class="orb orb-a"></span>
+    <span class="orb orb-b"></span>
+    <span class="orb orb-c"></span>
+  </div>
+  <div class="hero-inner">
+    <p class="eyebrow">a—lex—i—no—mi—a · <em>from Greek,</em> "no words for names"</p>
+    <h1 class="hero-title">
+      <span class="line">The name</span>
+      <span class="line stroke">on the tip of your tongue</span>
+      <span class="line">that never<span class="cursor" aria-hidden="true"></span> <span id="typer"></span></span>
     </h1>
-    <p class="hero-subtitle reveal">
-      The inability to say someone's name — not because you forgot it,<br class="br-desktop" />
-      but because saying it feels unbearable.
+    <p class="hero-sub">
+      A quiet, under-researched anxiety shapes how millions of people speak — or fail to speak —
+      the names of partners, parents, friends, and colleagues. This is an evidence-based guide to
+      what clinicians now call <strong>alexinomia</strong>.
     </p>
-    <div class="hero-cta reveal">
-      <a href="#what" class="btn btn-primary">Explore the Research</a>
-      <a href="#self-check" class="btn btn-ghost">Take the Self-Check</a>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#what">Begin reading</a>
+      <a class="btn btn-ghost" href="#reflect">Take the reflection</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label">scroll</span>
     </div>
   </div>
-  <div class="hero-scroll-hint">
-    <span>Scroll</span>
-    <div class="scroll-arrow"></div>
-  </div>
+</header>
+
+<section class="pullquote reveal">
+  <blockquote>
+    <p>“Addressing someone by name is a small, almost invisible act — but for people with alexinomia, it can feel impossible, even with the people they love most.”</p>
+    <cite>— adapted from Ditye, Rodax &amp; Welleschik, <em>Frontiers in Psychology</em> (2023)</cite>
+  </blockquote>
 </section>
 
-<!-- ═══════════════════════════ PULL QUOTE ═══════════════════════════ -->
-<section class="pull-quote-section">
-  <div class="container">
-    <blockquote class="pull-quote reveal">
-      <p>"Affected individuals experience psychological distress and a variety of negative emotions in situations in which addressing others with their name is intended, resulting in avoidance behavior, impaired social interactions, and a reduced quality of affected relationships."</p>
-      <cite>— Ditye, Rodax &amp; Welleschik, <em>Frontiers in Psychology</em>, 2023</cite>
-    </blockquote>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ WHAT IS IT? ═══════════════════════════ -->
-<section id="what" class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Definition</span>
-      <h2>What Is Alexinomia?</h2>
+<section class="section" id="what">
+  <div class="grid two">
+    <div class="reveal">
+      <p class="section-kicker">01 · Definition</p>
+      <h2 class="section-title">What is alexinomia?</h2>
+      <p class="lede">
+        Alexinomia is a <strong>fear-based avoidance of using personal names</strong> in
+        conversation. It is not forgetfulness; affected people know the name perfectly well.
+        The block is emotional — a sudden wave of anxiety, awkwardness, or shame the moment
+        they try to say it aloud.
+      </p>
+      <p>
+        The term was coined in 2023 by a research group at Sigmund Freud Private University
+        (Vienna) after interviews revealed a pattern of severe, lifelong name-avoidance that
+        had never been named in the clinical literature. The word joins the Greek
+        <em>a-</em> (without) + <em>lexi-</em> (word) + <em>-nomia</em> (name).
+      </p>
     </div>
-    <div class="what-grid">
-      <div class="what-text reveal">
-        <p class="lead">Alexinomia (from Greek: <em>alex</em> — "without" + <em>noma</em> — "name") is a psychological phenomenon in which a person knows someone's name perfectly well but experiences severe anxiety or discomfort when attempting to <em>use</em> it in conversation.</p>
-        <p>First formally identified and named by researchers at Sigmund Freud Private University Vienna, alexinomia is not a memory disorder, a language impairment, or a simple social quirk. It is a distinct psychosocial phenomenon driven by anxiety — one that can silently affect how people connect with others every single day.</p>
-        <p>The avoidance can occur with <em>any</em> name in <em>any</em> relationship: friends, partners, colleagues, even family members. Rather than saying "Hi, Sarah!" a person with alexinomia might say "Hey!" and change the subject — or send a text instead of calling, purely to avoid the moment of having to say the name out loud.</p>
-      </div>
-      <div class="what-cards reveal">
-        <div class="info-card">
-          <div class="info-card-icon">📖</div>
-          <h3>Etymology</h3>
-          <p>The word means <em>"no words for names"</em> — coined to capture the specific blockage experienced: the name is known, but cannot be spoken.</p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-icon">🧠</div>
-          <h3>Not Memory Loss</h3>
-          <p>Alexinomia is unrelated to forgetting names. People with alexinomia know the name — the barrier is emotional, not cognitive.</p>
-        </div>
-        <div class="info-card">
-          <div class="info-card-icon">🌍</div>
-          <h3>Cross-Cultural</h3>
-          <p>Research indicates alexinomia occurs across many languages, cultures, and age groups — it is not unique to any one society or setting.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ STATS ═══════════════════════════ -->
-<section class="stats-section">
-  <div class="container">
-    <div class="stats-grid">
-      <div class="stat-item reveal">
-        <span class="stat-number" data-target="257">0</span>
-        <span class="stat-label">Unique sources analyzed in qualitative research (Bergert et al., 2024)</span>
-      </div>
-      <div class="stat-item reveal">
-        <span class="stat-number" data-target="190">0</span>
-        <span class="stat-label">Participants in social anxiety study (Ditye et al., 2025)</span>
-      </div>
-      <div class="stat-item reveal">
-        <span class="stat-number" data-target="3">0</span>
-        <span class="stat-label">Peer-reviewed publications on alexinomia (2023–2025)</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ SYMPTOMS ═══════════════════════════ -->
-<section id="symptoms" class="section section-alt">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Signs &amp; Experience</span>
-      <h2>How Does It Manifest?</h2>
-      <p class="section-intro">Alexinomia is not a checklist — it is a lived experience. Click each card to learn more.</p>
-    </div>
-    <div class="symptom-grid">
-
-      <div class="symptom-card reveal" tabindex="0">
-        <div class="symptom-card-front">
-          <div class="symptom-icon">😰</div>
-          <h3>Anticipatory Anxiety</h3>
-          <span class="card-hint">Click to expand</span>
-        </div>
-        <div class="symptom-card-back">
-          <p>Before a conversation even begins, a person with alexinomia may feel dread about the moment they would typically address someone by name. This anticipation can cause avoidance of entire social situations.</p>
-        </div>
-      </div>
-
-      <div class="symptom-card reveal" tabindex="0">
-        <div class="symptom-card-front">
-          <div class="symptom-icon">🚫</div>
-          <h3>Active Name Avoidance</h3>
-          <span class="card-hint">Click to expand</span>
-        </div>
-        <div class="symptom-card-back">
-          <p>Individuals go to considerable lengths to avoid saying names directly — rephrasing sentences, using "hey," "excuse me," or non-verbal gestures instead. The avoidance happens across text, phone, and face-to-face communication.</p>
-        </div>
-      </div>
-
-      <div class="symptom-card reveal" tabindex="0">
-        <div class="symptom-card-front">
-          <div class="symptom-icon">💔</div>
-          <h3>Relationship Strain</h3>
-          <span class="card-hint">Click to expand</span>
-        </div>
-        <div class="symptom-card-back">
-          <p>Research shows the behavior is paradoxically stronger in closer relationships. Partners and family members may notice the absence of their name and misinterpret it as emotional distance, indifference, or a lack of love — when the reality is quite the opposite.</p>
-        </div>
-      </div>
-
-      <div class="symptom-card reveal" tabindex="0">
-        <div class="symptom-card-front">
-          <div class="symptom-icon">🧊</div>
-          <h3>Physical Discomfort</h3>
-          <span class="card-hint">Click to expand</span>
-        </div>
-        <div class="symptom-card-back">
-          <p>Beyond emotional distress, many individuals report physical sensations — tension, a feeling of freezing up, an inability to form the word — in the moment they attempt to say a name. These somatic responses reinforce avoidance.</p>
-        </div>
-      </div>
-
-      <div class="symptom-card reveal" tabindex="0">
-        <div class="symptom-card-front">
-          <div class="symptom-icon">🙈</div>
-          <h3>Shame &amp; Secrecy</h3>
-          <span class="card-hint">Click to expand</span>
-        </div>
-        <div class="symptom-card-back">
-          <p>Because the phenomenon was previously unnamed and unstudied, many people experiencing it had no framework to understand it. This often led to deep shame and secrecy — the person knowing something feels "wrong" but not knowing why, or even that others share the experience.</p>
-        </div>
-      </div>
-
-      <div class="symptom-card reveal" tabindex="0">
-        <div class="symptom-card-front">
-          <div class="symptom-icon">🔗</div>
-          <h3>Insecure Attachment</h3>
-          <span class="card-hint">Click to expand</span>
-        </div>
-        <div class="symptom-card-back">
-          <p>Research has found that those with alexinomia often show higher attachment insecurity — specifically discomfort with emotional closeness and intimacy. Saying someone's name is an act of intimacy, and for those with anxious or avoidant attachment styles, this intimacy can feel threatening.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════ RESEARCH TIMELINE ═══════════════════════════ -->
-<section id="research" class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Peer-Reviewed Science</span>
-      <h2>The Research Story</h2>
-      <p class="section-intro">Alexinomia is a recently identified phenomenon. Here is how scientific understanding has developed.</p>
-    </div>
-
-    <div class="timeline">
-
-      <div class="timeline-item reveal">
-        <div class="timeline-marker">
-          <span class="timeline-year">2023</span>
-        </div>
-        <div class="timeline-content">
-          <span class="timeline-journal">Frontiers in Psychology</span>
-          <h3>The Naming of a Phenomenon</h3>
-          <p>In the first peer-reviewed paper on the topic, Thomas Ditye, Nina Rodax, and Lisa Welleschik at Sigmund Freud Private University Vienna formally named and defined alexinomia. Drawing on qualitative observation and preliminary data, the researchers proposed the term and outlined its key characteristics: anxiety-driven name avoidance that is distinct from memory problems and linked to insecure attachment and social anxiety.</p>
-          <p>The paper introduced the framework that would guide all subsequent research, establishing that alexinomia operates across all types of relationships and communication modalities.</p>
-          <div class="timeline-cite">
-            <strong>Citation:</strong> Ditye, T., Rodax, N., &amp; Welleschik, L. (2023). Alexinomia: The fear of using personal names. <em>Frontiers in Psychology</em>, 14, 1129272. <a href="https://doi.org/10.3389/fpsyg.2023.1129272" target="_blank" rel="noopener">doi:10.3389/fpsyg.2023.1129272</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-marker">
-          <span class="timeline-year">2024</span>
-        </div>
-        <div class="timeline-content">
-          <span class="timeline-journal">Acta Psychologica</span>
-          <h3>Confirming a Widespread Phenomenon</h3>
-          <p>Bergert, Welleschik, and Ditye published a large-scale qualitative study analyzing <strong>257 unique sources</strong> — personal accounts, forum posts, and testimonials — to examine alexinomia as a broad psychosocial phenomenon. The study confirmed that alexinomia is far from rare, appearing across diverse demographic and cultural groups.</p>
-          <p>The research characterized alexinomia as "an inhibited behaviour in saying names" that is psychosocially distinct, and noted the phenomenon had been widely experienced but remained unnamed and unacknowledged before the 2023 paper.</p>
-          <div class="timeline-cite">
-            <strong>Citation:</strong> Bergert, A., Welleschik, L., &amp; Ditye, T. (2024). "Why can't I say people's names?" Alexinomia as a widespread psychological phenomenon. <em>Acta Psychologica</em>, 246, 104279. <a href="https://pubmed.ncbi.nlm.nih.gov/38643557/" target="_blank" rel="noopener">PMID: 38643557</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item reveal">
-        <div class="timeline-marker">
-          <span class="timeline-year">2025</span>
-        </div>
-        <div class="timeline-content">
-          <span class="timeline-journal">Journal of Anxiety Disorders</span>
-          <h3>Linking Alexinomia to Social Anxiety</h3>
-          <p>Ditye, Sartorio, and Welleschik tested a clinical hypothesis in a controlled study of <strong>190 participants</strong>: that alexinomia is not just correlated with social anxiety, but may represent an under-recognized symptom of it. Results showed a <em>strong positive relationship</em> between social anxiety severity and degree of name-avoidance behavior.</p>
-          <p>The study found that name avoidance was particularly pronounced in contexts of direct verbal communication and in closer personal relationships — precisely the situations where social anxiety is most activating. The authors concluded that alexinomia warrants formal consideration within the clinical diagnosis and treatment of social anxiety disorder.</p>
-          <div class="timeline-cite">
-            <strong>Citation:</strong> Ditye, T., Sartorio, M., &amp; Welleschik, L. (2025). Name avoidance in social anxiety: Understanding alexinomia. <em>Journal of Anxiety Disorders</em>. <a href="https://pubmed.ncbi.nlm.nih.gov/39721365/" target="_blank" rel="noopener">PMID: 39721365</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Key Findings box -->
-    <div class="findings-box reveal">
-      <h3>What the Research Tells Us</h3>
-      <ul class="findings-list">
-        <li><strong>Alexinomia is real and measurable</strong> — it is not simply shyness or forgetfulness.</li>
-        <li><strong>It is linked to social anxiety</strong> — higher anxiety correlates with more severe name avoidance.</li>
-        <li><strong>Insecure attachment plays a role</strong> — those who feel uncomfortable with emotional closeness are more affected.</li>
-        <li><strong>It crosses cultures and languages</strong> — research suggests the phenomenon appears in multiple linguistic and sociocultural contexts.</li>
-        <li><strong>It is more intense in close relationships</strong> — paradoxically, the people we care about most are often the hardest to name.</li>
-        <li><strong>It impacts quality of life</strong> — avoidance behaviors can damage relationships and reduce social functioning.</li>
+    <div class="definition-card reveal">
+      <h3>In one sentence</h3>
+      <p class="big">
+        An anxiety-driven inability to address others by name — across every form of
+        communication and every kind of relationship.
+      </p>
+      <ul class="bullets">
+        <li>Not a memory problem</li>
+        <li>Not shyness about speaking in general</li>
+        <li>Often <em>worse</em> with closer people, not strangers</li>
+        <li>Strongly tied to social anxiety and insecure attachment</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ IMPACT ═══════════════════════════ -->
-<section id="impact" class="section section-alt">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Living With Alexinomia</span>
-      <h2>The Real-World Impact</h2>
-      <p class="section-intro">Alexinomia is not merely an awkward habit — it shapes how people experience their closest relationships.</p>
-    </div>
-    <div class="impact-grid">
-      <div class="impact-card reveal">
-        <h3>Romantic Relationships</h3>
-        <p>Partners may feel unnamed — and therefore unloved or unimportant. The absence of a name in intimate speech is often noticed even if the reason is never understood. Research found that those with alexinomia show elevated discomfort with emotional closeness, suggesting that the fear of naming is bound up with the fear of true intimacy.</p>
-      </div>
-      <div class="impact-card reveal">
-        <h3>Friendships</h3>
-        <p>Friendships can feel one-sided or distant to the person without alexinomia, who may not understand why their name is never used. The person with alexinomia, meanwhile, may develop elaborate strategies — always being the one to text first, preferring group chats, or deflecting direct address — without ever knowing why these workarounds feel necessary.</p>
-      </div>
-      <div class="impact-card reveal">
-        <h3>The Workplace</h3>
-        <p>Professional settings add their own pressure. Failing to address a colleague or manager by name can be perceived as disrespectful or cold. Networking events, introductions, and team meetings become landmines, and the effort required to navigate them can be exhausting and career-limiting.</p>
-      </div>
-      <div class="impact-card reveal">
-        <h3>Mental Health</h3>
-        <p>The accumulation of avoided moments, misunderstood relationships, and unexplained shame carries a mental health cost. Because the phenomenon was previously unnamed, many people experienced their alexinomia in isolation — unable to explain it, and unaware that others shared it.</p>
-      </div>
-    </div>
+<section class="section section-muted" id="experience">
+  <div class="section-head reveal">
+    <p class="section-kicker">02 · The inner experience</p>
+    <h2 class="section-title">What it feels like, from the inside</h2>
+    <p class="lede">
+      Across 257 first-person accounts analysed by Bergert, Welleschik &amp; Ditye (2024),
+      a small set of experiences came up again and again. Tap any card to expand.
+    </p>
+  </div>
 
-    <div class="intimate-connection reveal">
-      <h3>Why Names Feel So Intimate</h3>
-      <p>Research suggests that using someone's name is a fundamentally intimate act — it signals recognition, attention, and personal connection. Dale Carnegie famously called a person's name "the sweetest sound" to them. For those with alexinomia, this very intimacy is the source of anxiety: saying a name feels like an exposure of closeness that feels unbearable, dangerous, or simply impossible.</p>
-      <p>This connects closely to findings on attachment theory: individuals with anxious or avoidant attachment styles — who are more likely to feel threatened by closeness — show higher rates of alexinomia symptoms. The name becomes a symbol of the intimacy they cannot yet allow themselves.</p>
+  <ul class="feature-cards">
+    <li class="fcard reveal" tabindex="0">
+      <span class="fcard-num">I.</span>
+      <h3>Anticipatory dread</h3>
+      <p class="fcard-short">A spike of anxiety before the name is even spoken.</p>
+      <p class="fcard-long">
+        Affected individuals describe rehearsing the name in their head, scripting the
+        sentence, then freezing at the last moment. The dread is not about saying the
+        <em>wrong</em> name — it is about the act of naming itself.
+      </p>
+    </li>
+    <li class="fcard reveal" tabindex="0">
+      <span class="fcard-num">II.</span>
+      <h3>Elaborate avoidance</h3>
+      <p class="fcard-short">Everyday workarounds invented to dodge the name.</p>
+      <p class="fcard-long">
+        "Hey you," "excuse me," waving, texting instead of calling, waiting to make eye
+        contact before speaking. Some people avoid partners' names for years — one
+        participant reported never saying her husband's name in fifteen years of marriage.
+      </p>
+    </li>
+    <li class="fcard reveal" tabindex="0">
+      <span class="fcard-num">III.</span>
+      <h3>Closer = harder</h3>
+      <p class="fcard-short">Intimacy intensifies, rather than eases, the block.</p>
+      <p class="fcard-long">
+        Counter-intuitively, alexinomia is typically most severe with partners, parents,
+        and close friends. Strangers and acquaintances are sometimes easier — a pattern
+        that points to attachment-related vulnerability rather than general social fear.
+      </p>
+    </li>
+    <li class="fcard reveal" tabindex="0">
+      <span class="fcard-num">IV.</span>
+      <h3>Physical sensations</h3>
+      <p class="fcard-short">A body that rebels at the first syllable.</p>
+      <p class="fcard-long">
+        Tight throat, held breath, flushed face, racing heart, a sense of the name
+        "sticking" in the mouth. Several accounts describe the feeling as physically
+        catching the name before it leaves the lips.
+      </p>
+    </li>
+    <li class="fcard reveal" tabindex="0">
+      <span class="fcard-num">V.</span>
+      <h3>Shame and secrecy</h3>
+      <p class="fcard-short">A private struggle rarely spoken about.</p>
+      <p class="fcard-long">
+        Because the behaviour looks trivial from the outside, most affected people have
+        never told anyone. Many first recognise themselves only when they stumble on
+        someone else's account — one reason alexinomia was invisible in the literature
+        for so long.
+      </p>
+    </li>
+    <li class="fcard reveal" tabindex="0">
+      <span class="fcard-num">VI.</span>
+      <h3>Relational cost</h3>
+      <p class="fcard-short">Loved ones wonder why they are never named.</p>
+      <p class="fcard-long">
+        Partners and parents sometimes interpret the avoidance as coldness or rejection.
+        The 2023 interview study found this misreading to be one of the most painful
+        downstream consequences of the condition.
+      </p>
+    </li>
+  </ul>
+</section>
+
+<section class="section stats-band">
+  <div class="grid three">
+    <div class="stat reveal">
+      <span class="stat-num" data-target="257">0</span>
+      <p class="stat-label">First-person accounts analysed across online forums (Bergert et al., 2024)</p>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-num" data-target="190">0</span>
+      <p class="stat-label">Participants in the 2025 social-anxiety study (Ditye et al., 2025)</p>
+    </div>
+    <div class="stat reveal">
+      <span class="stat-num" data-target="3">0</span>
+      <p class="stat-label">Peer-reviewed papers defining alexinomia (2023 · 2024 · 2025)</p>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ SELF-CHECK ═══════════════════════════ -->
-<section id="self-check" class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Reflection Tool</span>
-      <h2>Self-Check: Could This Be You?</h2>
-      <p class="section-intro">This is <strong>not a diagnostic tool</strong>. It is an awareness exercise based on experiences described in peer-reviewed research. Only a qualified mental health professional can diagnose any psychological condition.</p>
+<section class="section" id="research">
+  <div class="section-head reveal">
+    <p class="section-kicker">03 · The evidence</p>
+    <h2 class="section-title">Three papers, one emerging picture</h2>
+    <p class="lede">
+      Alexinomia is a young field — the term itself is only three years old. Here is the
+      full peer-reviewed literature, in order.
+    </p>
+  </div>
+
+  <ol class="timeline">
+    <li class="t-item reveal">
+      <div class="t-year">2023</div>
+      <div class="t-body">
+        <p class="t-journal">Frontiers in Psychology · open access</p>
+        <h3 class="t-title">Alexinomia: The fear of using personal names</h3>
+        <p class="t-authors">Ditye, T., Rodax, N., &amp; Welleschik, L.</p>
+        <p class="t-summary">
+          The paper that named the phenomenon. A mixed-methods study of 13 affected
+          women combined semi-structured interviews with standardised measures of social
+          anxiety and attachment. The authors found that name-avoidance was most severe
+          in close relationships, correlated with social-anxiety and insecure-attachment
+          scores, and operated across every communication channel — face-to-face, phone,
+          text, and written address.
+        </p>
+        <a class="t-link" href="https://doi.org/10.3389/fpsyg.2023.1129272" target="_blank" rel="noopener">Read the paper ↗</a>
+      </div>
+    </li>
+
+    <li class="t-item reveal">
+      <div class="t-year">2024</div>
+      <div class="t-body">
+        <p class="t-journal">Acta Psychologica · Elsevier</p>
+        <h3 class="t-title">"Why can't I say people's names?" Alexinomia as a widespread psychological phenomenon</h3>
+        <p class="t-authors">Bergert, A., Welleschik, L., &amp; Ditye, T.</p>
+        <p class="t-summary">
+          A qualitative analysis of 257 first-person accounts pulled from English-language
+          advice forums and discussion threads. The study documents the phenomenon across
+          demographics and geographies, catalogues effective and ineffective coping
+          strategies, and shows that severity can diminish with deliberate practice — the
+          first evidence that alexinomia is trainable rather than fixed.
+        </p>
+        <a class="t-link" href="https://doi.org/10.1016/j.actpsy.2024.104279" target="_blank" rel="noopener">Read the paper ↗</a>
+      </div>
+    </li>
+
+    <li class="t-item reveal">
+      <div class="t-year">2025</div>
+      <div class="t-body">
+        <p class="t-journal">Journal of Anxiety Disorders · Elsevier</p>
+        <h3 class="t-title">Name avoidance in social anxiety: Understanding alexinomia</h3>
+        <p class="t-authors">Ditye, T., Sartorio, M., &amp; Welleschik, L.</p>
+        <p class="t-summary">
+          The first quantitative test in a larger sample (n = 190). Using the Social
+          Interaction Anxiety Scale and the Liebowitz Social Anxiety Scale, the authors
+          found a strong positive relationship between social-anxiety severity and
+          fear-based name avoidance — positioning alexinomia as a likely under-recognised
+          symptom of social-anxiety disorder.
+        </p>
+        <a class="t-link" href="https://doi.org/10.1016/j.janxdis.2024.102958" target="_blank" rel="noopener">Read the paper ↗</a>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="section section-muted" id="impact">
+  <div class="section-head reveal">
+    <p class="section-kicker">04 · Where it lands</p>
+    <h2 class="section-title">How alexinomia reshapes a life</h2>
+    <p class="lede">
+      Because names are such small words, the cost of avoiding them is paid quietly —
+      across thousands of tiny interactions.
+    </p>
+  </div>
+
+  <div class="grid two impact-grid">
+    <article class="impact reveal">
+      <h3>Romantic life</h3>
+      <p>
+        Partners who are never addressed by name sometimes read the silence as
+        emotional withdrawal. Affected individuals describe feeling "stuck behind glass" —
+        loving someone deeply while being unable to say the one word that most intimately
+        acknowledges them.
+      </p>
+    </article>
+    <article class="impact reveal">
+      <h3>Family of origin</h3>
+      <p>
+        Interview participants frequently reported that the block first appeared in
+        childhood around a parent's name. For some, it never shifted; decades later the
+        parent's name still cannot be spoken.
+      </p>
+    </article>
+    <article class="impact reveal">
+      <h3>Friendships</h3>
+      <p>
+        Forming new friendships is complicated by a reluctance to use the friend's name
+        — which can read as aloofness. Group dynamics are especially hard; addressing
+        one person in a group makes the avoidance more visible.
+      </p>
+    </article>
+    <article class="impact reveal">
+      <h3>Work and school</h3>
+      <p>
+        Professional settings demand frequent address by name — greetings, introductions,
+        meetings, emails. Affected people report avoiding roles with high
+        interpersonal-naming load, narrowing their career choices.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="reflect">
+  <div class="section-head reveal">
+    <p class="section-kicker">05 · Reflection</p>
+    <h2 class="section-title">A gentle self-check</h2>
+    <p class="lede">
+      Seven short questions drawn from themes in the 2023 and 2024 studies. This is
+      <strong>not a diagnostic instrument</strong> — only a mirror for reflection. If
+      anything resonates, consider talking with a qualified mental-health professional.
+    </p>
+  </div>
+
+  <div class="quiz reveal" id="quiz">
+    <div class="quiz-progress"><span class="quiz-progress-bar" id="quizBar"></span></div>
+    <div class="quiz-stage" id="quizStage">
+      <!-- injected by script.js -->
     </div>
-
-    <div class="quiz-container reveal">
-      <div id="quiz-intro" class="quiz-screen active">
-        <p class="quiz-desc">Answer 7 short questions honestly. There are no wrong answers — only an opportunity to reflect on your own experience.</p>
-        <button class="btn btn-primary" id="startQuiz">Begin Reflection</button>
-      </div>
-
-      <div id="quiz-questions" class="quiz-screen">
-        <div class="quiz-progress">
-          <div class="quiz-progress-bar" id="progressBar"></div>
-        </div>
-        <p class="quiz-counter" id="quizCounter">Question 1 of 7</p>
-        <p class="quiz-question" id="quizQuestion"></p>
-        <div class="quiz-options" id="quizOptions"></div>
-      </div>
-
-      <div id="quiz-result" class="quiz-screen">
-        <div class="result-icon" id="resultIcon"></div>
-        <h3 id="resultTitle"></h3>
-        <p id="resultText"></p>
-        <p class="result-disclaimer">Remember: this reflection tool cannot diagnose alexinomia or any other condition. If these experiences resonate strongly with you, speaking to a psychotherapist or clinical psychologist is a meaningful next step.</p>
-        <button class="btn btn-ghost" id="retakeQuiz">Reflect Again</button>
-      </div>
+    <div class="quiz-foot">
+      <button class="btn btn-ghost" id="quizBack" disabled>Back</button>
+      <span class="quiz-count" id="quizCount">Question 1 of 7</span>
+      <button class="btn btn-primary" id="quizNext" disabled>Next</button>
     </div>
   </div>
 </section>
 
-<!-- ═══════════════════════════ GET HELP ═══════════════════════════ -->
-<section id="help" class="section section-alt">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Support &amp; Treatment</span>
-      <h2>Getting Help</h2>
-      <p class="section-intro">Research is still young, but existing knowledge of related conditions points toward effective paths forward.</p>
-    </div>
-    <div class="help-grid">
-      <div class="help-card reveal">
-        <div class="help-icon">🧩</div>
-        <h3>Psychotherapy</h3>
-        <p>Researchers recommend working with a trained psychotherapist or clinical psychologist. Cognitive Behavioural Therapy (CBT) — particularly approaches developed for social anxiety — is the most evidence-based starting point, as alexinomia is closely linked to social anxiety disorder.</p>
-      </div>
-      <div class="help-card reveal">
-        <div class="help-icon">🔗</div>
-        <h3>Attachment-Informed Therapy</h3>
-        <p>Because research links alexinomia to insecure attachment, therapies that address attachment patterns — including Emotionally Focused Therapy (EFT) and schema-based approaches — may be especially relevant for understanding the emotional roots of name avoidance.</p>
-      </div>
-      <div class="help-card reveal">
-        <div class="help-icon">💬</div>
-        <h3>Naming It</h3>
-        <p>For many people, simply learning that alexinomia has a name — and that it is not unusual — provides immediate relief. The researchers at Sigmund Freud Private University Vienna have noted that people who discovered the term reported feeling "seen" for the first time after years of unexplained shame.</p>
-      </div>
-      <div class="help-card reveal">
-        <div class="help-icon">📣</div>
-        <h3>Communicate Openly</h3>
-        <p>If you experience alexinomia and it affects your relationships, consider sharing what you have learned with those close to you. Understanding can transform misinterpretation ("they don't care about me") into empathy ("they are struggling with something real").</p>
-      </div>
-    </div>
-    <div class="help-note reveal">
-      <p><strong>Note:</strong> Alexinomia research is in its early stages. If you are a clinician seeking to understand a client's experience, the publications listed in the Sources section are the current scientific foundation. The <a href="https://alexinomia.org" target="_blank" rel="noopener">alexinomia.org</a> website, maintained by the research team, also provides updates on ongoing studies.</p>
-    </div>
+<section class="section section-muted" id="help">
+  <div class="section-head reveal">
+    <p class="section-kicker">06 · Support</p>
+    <h2 class="section-title">What helps — according to the research</h2>
+    <p class="lede">
+      There is no manualised treatment for alexinomia yet. But the condition's strong
+      links to social anxiety and insecure attachment point to well-established
+      therapeutic approaches.
+    </p>
+  </div>
+
+  <div class="grid three">
+    <article class="support reveal">
+      <h3>CBT for social anxiety</h3>
+      <p>
+        Because alexinomia tracks so closely with social-anxiety severity (Ditye et al.,
+        2025), the exposure-based techniques and cognitive restructuring used in CBT for
+        social anxiety are a natural starting point — graduated practice, beginning with
+        low-stakes names and working toward close relationships.
+      </p>
+    </article>
+    <article class="support reveal">
+      <h3>Attachment-informed therapy</h3>
+      <p>
+        The 2023 study's finding that alexinomia intensifies in close relationships, and
+        correlates with insecure-attachment measures, suggests attachment-focused
+        modalities (e.g. emotionally focused therapy) may reach parts of the problem
+        that pure exposure does not.
+      </p>
+    </article>
+    <article class="support reveal">
+      <h3>Naming, literally</h3>
+      <p>
+        The single most-reported benefit in Bergert et al. (2024) was simply discovering
+        that the experience had a name. Many affected people had carried the block in
+        silence for decades; being able to say "I have alexinomia" is itself a first
+        therapeutic step.
+      </p>
+    </article>
+  </div>
+
+  <div class="callout reveal">
+    <strong>If you are in distress,</strong> please contact a local crisis line or a
+    qualified mental-health professional. This site is informational, not medical
+    advice.
   </div>
 </section>
 
-<!-- ═══════════════════════════ REFERENCES ═══════════════════════════ -->
-<section id="references" class="section">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Academic Sources</span>
-      <h2>References &amp; Sources</h2>
-      <p class="section-intro">All content on this site is grounded in published, peer-reviewed research or material from the primary research institution. Links go directly to PubMed, DOI, or the original journal.</p>
-    </div>
-
-    <div class="references-list reveal">
-      <h3>Peer-Reviewed Journal Articles</h3>
-      <ol class="ref-list">
-        <li>
-          Ditye, T., Rodax, N., &amp; Welleschik, L. (2023). Alexinomia: The fear of using personal names. <em>Frontiers in Psychology</em>, 14, 1129272.
-          <br />
-          <a href="https://doi.org/10.3389/fpsyg.2023.1129272" target="_blank" rel="noopener">doi:10.3389/fpsyg.2023.1129272</a> ·
-          <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10069083/" target="_blank" rel="noopener">PMC10069083</a> ·
-          <a href="https://pubmed.ncbi.nlm.nih.gov/37020910/" target="_blank" rel="noopener">PMID: 37020910</a>
-          <span class="ref-badge open-access">Open Access</span>
-        </li>
-        <li>
-          Bergert, A., Welleschik, L., &amp; Ditye, T. (2024). "Why can't I say people's names?" Alexinomia as a widespread psychological phenomenon. <em>Acta Psychologica</em>, 246, 104279.
-          <br />
-          <a href="https://www.sciencedirect.com/science/article/pii/S0001691824001562" target="_blank" rel="noopener">ScienceDirect</a> ·
-          <a href="https://pubmed.ncbi.nlm.nih.gov/38643557/" target="_blank" rel="noopener">PMID: 38643557</a>
-        </li>
-        <li>
-          Ditye, T., Sartorio, M., &amp; Welleschik, L. (2025). Name avoidance in social anxiety: Understanding alexinomia. <em>Journal of Anxiety Disorders</em>.
-          <br />
-          <a href="https://www.sciencedirect.com/science/article/pii/S0887618524001348" target="_blank" rel="noopener">ScienceDirect</a> ·
-          <a href="https://pubmed.ncbi.nlm.nih.gov/39721365/" target="_blank" rel="noopener">PMID: 39721365</a>
-        </li>
-      </ol>
-
-      <h3>Institutional Research Pages</h3>
-      <ol class="ref-list" start="4">
-        <li>
-          Sigmund Freud Private University Vienna — Alexinomia Research.
-          <a href="https://psychologie.sfu.ac.at/en/research/alexinomia/" target="_blank" rel="noopener">psychologie.sfu.ac.at</a>
-        </li>
-        <li>
-          Alexinomia.org — Official research website maintained by the research team.
-          <a href="https://alexinomia.org" target="_blank" rel="noopener">alexinomia.org</a>
-        </li>
-      </ol>
-
-      <h3>Additional Reading</h3>
-      <ol class="ref-list" start="6">
-        <li>
-          Haverkampf, C. J. (n.d.). Alexinomia: The fear of using personal names.
-          <a href="https://jonathanhaverkampf.com/alexinomia-the-fear-of-using-personal-names/" target="_blank" rel="noopener">jonathanhaverkampf.com</a>
-        </li>
-        <li>
-          Bergert, A., Welleschik, L., &amp; Ditye, T. (2024). "Why Can't I Say People's Names?" Alexinomia as a widespread psychological phenomenon. SSRN preprint.
-          <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4730218" target="_blank" rel="noopener">SSRN: 4730218</a>
-        </li>
-      </ol>
-    </div>
-
-    <div class="disclaimer reveal">
-      <p><strong>Content Disclaimer:</strong> This website is for educational and informational purposes only. It does not constitute medical or psychological advice. If you believe you may be experiencing alexinomia or a related condition, please consult a qualified mental health professional.</p>
-    </div>
+<section class="section" id="refs">
+  <div class="section-head reveal">
+    <p class="section-kicker">07 · References</p>
+    <h2 class="section-title">Sources</h2>
+    <p class="lede">
+      All three peer-reviewed papers defining alexinomia, linked to the publishers of
+      record. Secondary links to PubMed and the authors' research group are provided
+      for convenience.
+    </p>
   </div>
+
+  <ol class="refs reveal">
+    <li>
+      Ditye, T., Rodax, N., &amp; Welleschik, L. (2023). Alexinomia: The fear of using
+      personal names. <em>Frontiers in Psychology, 14</em>, 1129272.
+      <div class="ref-links">
+        <a href="https://doi.org/10.3389/fpsyg.2023.1129272" target="_blank" rel="noopener">DOI</a>
+        <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1129272/full" target="_blank" rel="noopener">Frontiers (full text)</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/37020910/" target="_blank" rel="noopener">PubMed 37020910</a>
+        <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10069083/" target="_blank" rel="noopener">PMC10069083</a>
+      </div>
+    </li>
+    <li>
+      Bergert, A., Welleschik, L., &amp; Ditye, T. (2024). "Why can't I say people's
+      names?" Alexinomia as a widespread psychological phenomenon.
+      <em>Acta Psychologica, 246</em>, 104279.
+      <div class="ref-links">
+        <a href="https://doi.org/10.1016/j.actpsy.2024.104279" target="_blank" rel="noopener">DOI</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0001691824001562" target="_blank" rel="noopener">ScienceDirect</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/38643557/" target="_blank" rel="noopener">PubMed 38643557</a>
+      </div>
+    </li>
+    <li>
+      Ditye, T., Sartorio, M., &amp; Welleschik, L. (2025). Name avoidance in social
+      anxiety: Understanding alexinomia. <em>Journal of Anxiety Disorders, 109</em>,
+      102958.
+      <div class="ref-links">
+        <a href="https://doi.org/10.1016/j.janxdis.2024.102958" target="_blank" rel="noopener">DOI</a>
+        <a href="https://www.sciencedirect.com/science/article/pii/S0887618524001348" target="_blank" rel="noopener">ScienceDirect</a>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/39721365/" target="_blank" rel="noopener">PubMed 39721365</a>
+      </div>
+    </li>
+    <li class="ref-aux">
+      The authors' research group at Sigmund Freud Private University maintains an
+      informational hub at
+      <a href="https://alexinomia.org/" target="_blank" rel="noopener">alexinomia.org</a>
+      and a publications page at
+      <a href="https://psychologie.sfu.ac.at/en/research/alexinomia/" target="_blank" rel="noopener">psychologie.sfu.ac.at/en/research/alexinomia</a>.
+    </li>
+  </ol>
 </section>
 
-<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
-<footer>
-  <div class="container">
-    <p class="footer-logo">alexinomia</p>
-    <p class="footer-tagline">An evidence-based educational resource.</p>
-    <p class="footer-credit">Content grounded in peer-reviewed research · Published on GitHub Pages · No personal data collected</p>
-  </div>
+<footer class="foot">
+  <p>
+    An independent educational site. Not affiliated with the cited authors or
+    publishers. Built for a public-domain educational project; content licensed
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.
+  </p>
+  <p class="foot-meta">Last revised <time datetime="2026-04-19">April 2026</time>.</p>
 </footer>
 
 <script src="script.js"></script>
